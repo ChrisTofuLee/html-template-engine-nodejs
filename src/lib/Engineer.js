@@ -1,21 +1,16 @@
 // TODO: Write code to define and export the Engineer class.  HINT: This class should inherit from Employee.
+const Employee = require ("./Employee")
 
-
-
-//const axios = require("axios");
-
-
-class Engineer {
-  constructor(name, id, email, username) {
-    this.name = name;
-    this.id = id;
-    this.email = email;
-    this.GitHubUser = username;
+class Engineer extends Employee {
+  constructor(name, id, email, github) {
+    super(name, id, email);
+    this.github = github;
   }
 
-  getGitHub() {
+  getGithub() {
 
-    const gitHubUser = this.GitHubUser
+    // const gitHubUser = this.GitHubUser
+    // const githubURL
     // const gitHubUrl = `https://github.com/${this.username}`
     // return gitHubUrl
 
@@ -25,6 +20,7 @@ class Engineer {
     //     axios.get(queryUrl).then(getRepoList).then(saveDataToFile)
 
     // })
+    return this.github
 }
   getRole() {
     return "Engineer";
