@@ -66,7 +66,7 @@ const addTeamQuestions = [
     {
         type: 'list',
         name: 'jobTitle',
-        message: 'what team member information would you like to add?',
+        message: 'what job role does this team member have?',
         choices: [
           'Engineer', 'Intern',
         ],
@@ -95,7 +95,7 @@ const engineerQuestions = [
     {
         type: "list",
         name: "jobRole",
-        message: "Confirm add team engineer",
+        message: "Confirm team member job role",
         choices: [
             'Engineer'
           ],
@@ -129,7 +129,7 @@ const internQuestions = [
     {
         type: "list",
         name: "jobRole",
-        message: "Confirm add team engineer",
+        message: "Confirm team member job role",
         choices: [
             'Intern'
           ],
